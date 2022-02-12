@@ -4,13 +4,19 @@ body {
 }
 
 .navbar {
-  border-bottom: 5px solid red;
+  background: #000;
 }
-
-.navbar:hover {
-  animation-name: wave;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
+.navbar ul li a {
+  padding-left: 5%;
+  padding-right: 5%;
+  border-bottom: 2px solid darkblue;
+  border-radius: 0%;
+  height: auto;
+  color: #fff;
+}
+.navbar ul li:hover a {
+  padding-bottom: 5%;
+  border-radius: 20%;
 }
 
 /*# sourceMappingURL=style.css.map */

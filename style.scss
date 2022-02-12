@@ -1,17 +1,30 @@
 $border-color: darkblue;
 body {
     background-color: #dedede;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
+
 
 .navbar {
-    border-bottom: 5px solid red;
-}
-
-.navbar ul li:first:hover {}
-
-.navbar:hover {
-    animation-name: wave;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
+    background: #000;
+    ul {
+        li {
+            a{
+                padding-left: 5%;
+                padding-right: 5%;
+                border-bottom: 2px solid $border-color;
+                border-radius: 0%;
+                height: auto;
+                color: #fff;
+            }
+       
+        }
+        li:hover {
+            a{
+               padding-bottom: 5%;
+               border-radius: 20%;
+            }
+       
+        }
+    }
 }
