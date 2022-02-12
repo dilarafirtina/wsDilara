@@ -1,0 +1,17 @@
+$border-color: darkblue;
+body {
+    background-color: #dedede;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+    border-bottom: 5px solid red;
+}
+
+.navbar ul li:first:hover {}
+
+.navbar:hover {
+    animation-name: wave;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
