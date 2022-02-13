@@ -1,4 +1,4 @@
-const projects = [
+const projects= [
     {
         "id": "1",
         "name": "website",
@@ -37,41 +37,4 @@ const projects = [
     }
 ]
 
-document.getElementById("header").onmousemove = (event) => {
-    //console.log(event.y);
-}
-
-const getSiblings = function (e) {
-    let siblings = [];
-    if (!e.parentNode) {
-        return siblings;
-    }
-    let sibling = e.parentNode.firstChild;
-    while (sibling) {
-        if (sibling.nodeType === 1 && sibling !== e) {
-            siblings.push(sibling);
-        }
-        sibling = sibling.nextSibling;
-    }
-    return siblings;
-};
-
-const handleToggle = (idName) => {
-    let block = document.getElementById(idName);
-    let siblings = getSiblings(block);
-    siblings.map(e => e.classList.toggle("d-none"));
-    block.classList.toggle("col-lg-12");
-    block.children[1].classList.toggle("beVisible");
-
-}
-
-document.getElementById("aboutMe").onclick = () => {
-    handleToggle("aboutMe");
-}
-document.getElementById("projects").onclick = () => {
-    handleToggle("projects");
-}
-document.getElementById("contact").onclick = () => {
-    handleToggle("contact");
-}
-
+export default projects;

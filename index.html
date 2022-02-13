@@ -14,8 +14,8 @@
 </head>
 
 <body class="d-flex flex-column h-100">
-  <header class="moving-border" id="header">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Tenth navbar example">
+  <header class="moving-border container" id="header">
+    <nav class="navbar navbar-expand-lg" aria-label="Tenth navbar example">
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08"
           aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,20 +39,34 @@
   </header>
   <main class="flex-shrink-0">
     <div class="container">
-      <div="aboutme">
-        <h1>Hi,I’m Dilara and I am a Front End Developer / Foreign Language Teacher living in Antalya, Turkey :)</h1>
-        <p>
-          Front End Developer with a Bachelor's degree in computer engineering & 3 years experience building and maintaining responsive websites and mobile apps in the hospitality industry. Proficient in HTML, CSS, JavaScript; plus modern libraries and frameworks. Passionate about usability, data analytics, problem solving, languages, autodidacticism and lifelong learning. Senior English Language Teaching student and Turkish as a second language tutor at italki. 
-        </p>
+      <h1 class="my-3">Hi,I’m Dilara and I am a Front End Developer / Foreign Language Teacher living in Antalya, Turkey
+        :)
+      </h1>
+      <div class="row justify-content-md-between my-lg-3">
+        <div id="aboutMe" class="col-md-3 col-lg-3 my-3">
+          <h4 id="aboutMeTitle">About me</h4>
+          <p>
+            Front End Developer with a Bachelor's degree in computer engineering & 3 years experience building and
+            maintaining responsive websites and mobile apps in the hospitality industry. Proficient in HTML, CSS,
+            JavaScript; plus modern libraries and frameworks. Passionate about usability, data analytics, problem
+            solving, languages, autodidacticism and lifelong learning. Senior English Language Teaching student and
+            Turkish as a second language tutor at italki.
+          </p>
+        </div>
+        <div id="projects" class="col-md-3 col-lg-3 my-3">
+          <h4 id="projectsTitle">Projects</h4>
+          <div>Boxes</div>
+        </div>
+        <div id="contact" class="col-md-3 col-lg-3 my-3">
+          <h4 id="contactTitle">Contact</h4>
+          <div>Form</div>
+        </div>
       </div>
-      <div id="projects"></div>
-      <div id="contact"></div>
-
     </div>
   </main>
   <footer class="footer mt-auto py-3 bg-light">
     <div class="container">
-      <span class="text-muted">Place sticky footer content here.</span>
+      <span>Dilara Fırtına</span>
     </div>
   </footer>
   <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>

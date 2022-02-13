@@ -1,30 +1,60 @@
-$border-color: darkblue;
+$border-style: 1px solid #333;
 body {
-    background-color: #dedede;
     font-family: "Montserrat", sans-serif;
 }
 
-
 .navbar {
-    background: #000;
+    background: transparent;
+    border-bottom: $border-style;
     ul {
+        .nav-link {
+            color: #333;
+            font-size: 16px;
+        }
         li {
-            a{
-                padding-left: 5%;
-                padding-right: 5%;
-                border-bottom: 2px solid $border-color;
-                border-radius: 0%;
-                height: auto;
-                color: #fff;
+            a {
+                padding-left: 10%;
+                padding-right: 20%;
             }
-       
         }
         li:hover {
-            a{
-               padding-bottom: 5%;
-               border-radius: 20%;
+            a {
+                padding-bottom: 5%;
+                border-radius: 20%;
             }
-       
         }
     }
 }
+
+main {
+    #aboutMe,
+    #projects,
+    #contact {
+        border: $border-style;
+    }
+    h4 {
+        padding:5% 0;
+        cursor: pointer;
+    }
+    h4 + p, h4 + div{
+        display: none;
+    }
+}
+
+.beVisible {
+    animation-duration: 3s;
+    display: block;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
