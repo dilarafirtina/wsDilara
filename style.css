@@ -28,7 +28,8 @@ main h4 {
   padding: 5% 0;
   cursor: pointer;
 }
-main h4 + p, main h4 + div {
+main h4 + p,
+main h4 + div {
   display: none;
 }
 
@@ -45,6 +46,32 @@ main h4 + p, main h4 + div {
   }
   to {
     margin-left: 0%;
+    width: 100%;
+  }
+}
+.titleDetail {
+  border-bottom: 1px solid #333;
+  animation-duration: 3s;
+  animation-name: titleBorder;
+}
+
+.titleDetail::after {
+  content: " ";
+  display: block;
+  margin: auto;
+  height: 3px;
+  background: transparent;
+  transition: width 0.5s ease, background-color 0.5s ease;
+  width: 100%;
+}
+
+@keyframes titleBorder {
+  from {
+    margin-right: 100%;
+    width: 0px;
+  }
+  to {
+    margin-right: 0%;
     width: 100%;
   }
 }

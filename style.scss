@@ -33,10 +33,11 @@ main {
         border: $border-style;
     }
     h4 {
-        padding:5% 0;
+        padding: 5% 0;
         cursor: pointer;
     }
-    h4 + p, h4 + div{
+    h4 + p,
+    h4 + div {
         display: none;
     }
 }
@@ -49,12 +50,38 @@ main {
 
 @keyframes slidein {
     from {
-      margin-left: 100%;
-      width: 300%;
+        margin-left: 100%;
+        width: 300%;
     }
-  
+
     to {
-      margin-left: 0%;
-      width: 100%;
+        margin-left: 0%;
+        width: 100%;
     }
-  }
+}
+
+.titleDetail {
+    border-bottom: $border-style;
+    animation-duration: 3s;
+    animation-name: titleBorder;
+}
+.titleDetail::after {
+    content: " ";
+    display: block;
+    margin: auto;
+    height: 3px;
+    background: transparent;
+    transition: width 0.5s ease, background-color 0.5s ease;
+    width: 100%;
+}
+@keyframes titleBorder {
+    from {
+        margin-right: 100%;
+        width: 0px;
+    }
+
+    to {
+        margin-right: 0%;
+        width: 100%;
+    }
+}
