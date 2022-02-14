@@ -62,28 +62,21 @@ const handleToggle = (idName) => {
     siblings.map(e => e.classList.toggle("d-none"));
     block.classList.toggle("col-lg-12");
     block.children[0].classList.toggle("titleDetail");
+    block.children[1].classList.toggle("contents");
     block.children[1].classList.toggle("beVisible");
+    console.log(block);
 
 }
 
 document.getElementById("aboutMe").onclick = () => {
     handleToggle("aboutMe");
 }
-document.getElementById("navAboutMe").onclick = () => {
-    handleToggle("aboutMe");
-}
 
 document.getElementById("projects").onclick = () => {
     handleToggle("projects");
 }
-document.getElementById("navProjects").onclick = () => {
-    handleToggle("projects");
-}
 
 document.getElementById("contact").onclick = () => {
-    handleToggle("contact");
-}
-document.getElementById("navContact").onclick = () => {
     handleToggle("contact");
 }
 

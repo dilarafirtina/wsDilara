@@ -1,30 +1,35 @@
 $border-style: 1px solid #333;
 body {
     font-family: "Montserrat", sans-serif;
+    background-color: #fff;
 }
-
-.navbar {
+header {
     background: transparent;
     border-bottom: $border-style;
-    ul {
-        .nav-link {
-            color: #333;
-            font-size: 16px;
-        }
-        li {
-            a {
-                padding-left: 10%;
-                padding-right: 20%;
-            }
-        }
-        li:hover {
-            a {
-                padding-bottom: 5%;
-                border-radius: 20%;
-            }
-        }
-    }
 }
+
+// .navbar {
+//     background: transparent;
+//     border-bottom: $border-style;
+//     ul {
+//         .nav-link {
+//             color: #333;
+//             font-size: 16px;
+//         }
+//         li {
+//             a {
+//                 padding-left: 10%;
+//                 padding-right: 20%;
+//             }
+//         }
+//         li:hover {
+//             a {
+//                 padding-bottom: 5%;
+//                 border-radius: 20%;
+//             }
+//         }
+//     }
+// }
 
 main {
     #aboutMe,
@@ -33,18 +38,17 @@ main {
         border: $border-style;
     }
     h4 {
-        padding: 5% 0;
+        padding: 3% 0;
         cursor: pointer;
     }
-    h4 + p,
-    h4 + div {
+    .contents {
         display: none;
     }
 }
 
 .beVisible {
     animation-duration: 3s;
-    display: block;
+    display: flex;
     animation-name: slidein;
 }
 
